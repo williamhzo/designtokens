@@ -17,6 +17,7 @@ export const globalStyles = globalCss({
     lineHeight: 1.5,
     webkitFontSmoothing: "antialiased",
     "-webkit-font-smoothing": "antialiased",
+    fontFamily: "$inter",
   },
 
   "img, picture, video, canvas, svg": {

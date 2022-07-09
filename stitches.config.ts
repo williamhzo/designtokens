@@ -19,6 +19,10 @@ export const {
       ...skyDark,
       ...slateDark,
     },
+    fonts: {
+      inter: "Inter, -apple-system, system-ui, sans-serif",
+      mono: "monospace", // TODO
+    },
   },
   media: {},
   utils: {
