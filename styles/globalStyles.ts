@@ -18,6 +18,8 @@ export const globalStyles = globalCss({
     webkitFontSmoothing: "antialiased",
     "-webkit-font-smoothing": "antialiased",
     fontFamily: "$inter",
+    // gradient generated from https://cssgradient.io/gradient-backgrounds/.
+    background: "linear-gradient(to right, #92FE9D, #00C9FF)",
   },
 
   "img, picture, video, canvas, svg": {
