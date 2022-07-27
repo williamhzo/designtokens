@@ -1,6 +1,6 @@
 import { createStitches } from "@stitches/react";
 
-import { slate, slateDark, sky, skyDark } from "@radix-ui/colors";
+import { sky, slate, violet, skyDark, slateDark } from "@radix-ui/colors";
 
 export const {
   styled,
@@ -16,8 +16,27 @@ export const {
     colors: {
       ...sky,
       ...slate,
+      ...violet,
       ...skyDark,
       ...slateDark,
+
+      accentBase: "$violet1",
+      accentBgSubtle: "$violet2",
+      accentBg: "$violet3",
+      accentBgHover: "$violet4",
+      accentBgActive: "$violet5",
+      accentLine: "$violet6",
+      accentBorder: "$violet7",
+      accentBorderHover: "$violet8",
+      accentFocusRing: "$violet8",
+      accentSolid: "$violet9",
+      accentSolidHover: "$violet10",
+      accentText: "$violet11",
+      accentTextContrast: "$violet12",
+
+      grayText: "$slate11",
+
+      // codeBg: "hsl(255 30.3% 12.9%)", for dark mode :)
     },
     fonts: {
       inter: "Inter, -apple-system, system-ui, sans-serif",

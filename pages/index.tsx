@@ -5,16 +5,11 @@ import { styled } from "../stitches.config";
 const Home: NextPage = () => {
   return (
     <Layout>
-      <h1>Tailwind tokens</h1>
-      <h2>Sensible defaults for your next project&apos;s theme</h2>
+      <Heading>Tailwind tokens</Heading>
 
-      <a
-        href="https://github.com/tailwindlabs/tailwindcss/blob/master/stubs/defaultConfig.stub.js"
-        target="_blank"
-        rel="noreferrer"
-      >
-        tailwindcss default theme repository
-      </a>
+      <SubHeading>
+        Sensible defaults for your next project&apos;s theme
+      </SubHeading>
 
       <Snippets>
         {defaultTheme.map((tokenSet) => (
@@ -28,6 +23,16 @@ const Home: NextPage = () => {
 };
 
 export default Home;
+
+const Heading = styled("h1", {
+  color: "$accentTextContrast",
+});
+
+const SubHeading = styled("h2", {
+  color: "$accentTextLowContrast",
+  fontWeight: 500,
+  fontSize: "1.25rem",
+});
 
 const Layout = styled("main", {
   display: "flex",
@@ -47,8 +52,9 @@ const Snippets = styled("section", {
 });
 
 const Pre = styled("pre", {
-  backgroundColor: "$slate3",
-  color: "$sky12",
+  backgroundColor: "$accentBg",
+  color: "$accentText",
+  // color: "$accentText",
   padding: "$spacing$4",
   overflow: "auto",
   textAlign: "left",
